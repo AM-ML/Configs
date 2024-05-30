@@ -1,0 +1,76 @@
+{
+    "variables":
+    {
+        "black": "#ff0000"
+    },
+    "globals": {
+        // "foreground": "color(#ffffff)", // General text color
+        "background": "color(#2D2F36)", // Background color
+        "caret": "color(#405699)",      // Caret color
+        "line_highlight": "color(#3A3C42)", // Line highlight color
+        "selection": "color(#405699)",  // Selection color
+        "font_style": ""
+    },
+    "rules": [
+        {
+            "scope": "comment",
+            "foreground": "color(#81838A)",
+            "font_style": "" // Remove italic
+        },
+        {
+            "scope": "keyword",
+            "foreground": "color(#aaf)",
+            "font_style": "" // Remove italic
+        },
+        {
+            "scope": "entity.name.function",
+            "foreground": "color(#96B5DB)",
+            "font_style": "" // Remove italic
+        },
+         {
+            "scope": "storage.type", // Data types (e.g., int, float, etc.)
+            "foreground": "color(#cd96f1)", // Choose a distinct color for data types
+            "font_style": "" // Remove italic
+        },
+        {
+            "scope": "storage.modifier", // Storage modifiers (e.g., static, const)
+            "foreground": "color(#ee5050)", // Same color as data types for consistency
+            "font_style": "bold" // Remove italic
+        },
+        {
+            "scope": "entity.name.type", // Structures (e.g., struct, class names)
+            "foreground": "color(#E459D1)", // Choose a distinct color for structures
+            "font_style": "" // Remove italic
+        },
+        {
+            "scope": "variable, variable.other, variable.parameter", // Function arguments (e.g., 'argument' in 'int someFunction(int argument)')
+            "foreground": "color(#FFC551)", // Choose a distinct color for function arguments
+            "font_style": "" // Remove italic
+        },
+        {
+            "scope": "meta.function-call", // Function calls parenthesis(e.g., '()')
+            "foreground": "color(#ffffff)", // Choose a distinct color for function calls
+            "font_style": "" // Remove italic
+        },
+        {
+            "scope": "meta.function-call variable.function",
+            "foreground": "color(#96B5DB)", // Choose a distinct color for function names in function calls
+            "font_style": "" // Remove italic
+        },
+        {
+           "scope": "variable, variable.other, punctuation.definition.variable, variable.other.constant, variable.language, variable.parameter, variable.function, constant",
+            "foreground": "#FFC551",
+            "font_style": ""
+        },
+        {
+           "scope": "string",
+            "foreground": "#EF9F6D",
+            "font_style": ""
+        },
+        {
+            "scope": "source - punctuation - keyword",
+            "foreground": "#FFC551"
+        }
+
+    ]
+}
