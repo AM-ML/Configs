@@ -6,9 +6,9 @@
     "globals": {
         // "foreground": "color(#ffffff)", // General text color
         "background": "color(#2D2F36)", // Background color
-        "caret": "color(#405699)",      // Caret color
-        "line_highlight": "color(#3A3C42)", // Line highlight color
-        "selection": "color(#405699)",  // Selection color
+        "caret": "color(#6278baff)",      // Caret color
+        "line_highlight": "color(#242622)", // Line highlight color
+        "selection": "color(#203344)",  // Selection color
         "font_style": ""
     },
     "rules": [
@@ -18,13 +18,18 @@
             "font_style": "" // Remove italic
         },
         {
+            "scope": "comment.block",
+            "foreground": "color(#9183ba)",
+            "font_style": "bold" // Remove italic
+        },
+        {
             "scope": "keyword",
             "foreground": "color(#aaf)",
             "font_style": "" // Remove italic
         },
         {
             "scope": "entity.name.function",
-            "foreground": "color(#96B5DB)",
+            "foreground": "color(#b8d7ed)",
             "font_style": "" // Remove italic
         },
          {
@@ -54,7 +59,7 @@
         },
         {
             "scope": "meta.function-call variable.function",
-            "foreground": "color(#96B5DB)", // Choose a distinct color for function names in function calls
+            "foreground": "color(#b8d7ed)", // Choose a distinct color for function names in function calls
             "font_style": "" // Remove italic
         },
         {
